@@ -1,0 +1,8 @@
+{
+    "jupyter.jupyterServerType": "local",
+    "settingsSync.ignoredExtensions": [
+    "GitHub.vscode-pull-request-github"
+    ],
+    "github.autoPublish": true,
+    "github.upstream": "https://github.com/LuizMoreira-py/LivroPythonIniciantes.git"
+}
