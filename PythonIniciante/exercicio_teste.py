@@ -1,13 +1,16 @@
-salario = float(input("Digite o salário para o calculo do imposto: "))
+salario = float(input("Digite um valor para calculo de aumento de salário: "))
 
-base = salario
-imposto = 0
+percentual = 0
 
-if base > 3000:
-    imposto = imposto + ((base - 3000) * 0.35)
-    base = 3000
+if salario > 1250:
+    percentual = 10
+    aumento = (salario * percentual / 100)
+    novoSalario = salario + aumento
 
-if base > 1000:
-    imposto = imposto + ((base - 1000) * 0.20)
+if salario <= 1250:
+    percentual = 15
+    aumento = (salario * percentual / 100)
+    novoSalario = salario + aumento
 
-print(f"Salário: R${salario:6.2f} Imposto a pagar: R${imposto:6.2f}")
+print(f"O aumento de salário é de R${aumento:6.2f}")
+print(f"O novo salário é de R${novoSalario:6.2f}")
