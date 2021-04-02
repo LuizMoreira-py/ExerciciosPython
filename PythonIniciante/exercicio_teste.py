@@ -1,16 +1,7 @@
-salario = float(input("Digite um valor para calculo de aumento de salário: "))
+idade = int(input("Digite a idade de seu carro: "))
 
-percentual = 0
+if idade <= 3:
+    print("Seu carro é novo")
 
-if salario > 1250:
-    percentual = 10
-    aumento = (salario * percentual / 100)
-    novoSalario = salario + aumento
-
-if salario <= 1250:
-    percentual = 15
-    aumento = (salario * percentual / 100)
-    novoSalario = salario + aumento
-
-print(f"O aumento de salário é de R${aumento:6.2f}")
-print(f"O novo salário é de R${novoSalario:6.2f}")
+else:
+    print("Seu carro é velho")
