@@ -1,19 +1,24 @@
-categoria = int(input("Digite a categoria do produto: "))
-if categoria == 1:
-    preco = 10
+n1 = int(input("Informe um número inteiro: "))
+n2 = int(input("Informe um número inteiro: "))
+
+print("Qual operação você deseja realizar;")
+print("Informe soma(+), subtração (-), multiplicação (*) e divisão(/)")
+operacao = input()
+resultado = 0
+
+if operacao == "+":
+    resultado = n1 + n2
+
+elif operacao == "-":
+    resultado = n1 - n2
+
+elif operacao == "*":
+    resultado = n1 * n2
+
+elif operacao == "/":
+    resultado = n1 / n2
+
 else:
-    if categoria == 2:
-        preco = 18
-    else:
-        if categoria == 3:
-            preco = 23
-        else:
-            if categoria == 4:
-                preco = 26
-            else:
-                if categoria == 5:
-                    preco = 31
-                else:
-                    print("Categoria inválida, digite um valor entre 1 e 5!")
-                    preco = 0
-print(f"O preço do produto é: R${preco:6.2f}")
+    print("Valor invalido!")
+
+print(f"O valor da operação é: {resultado}")
