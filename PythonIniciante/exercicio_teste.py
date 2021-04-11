@@ -1,24 +1,26 @@
-n1 = int(input("Informe um número inteiro: "))
-n2 = int(input("Informe um número inteiro: "))
+consumo = int(input("Informe o consumo(kWh) de energia: "))
+print("Informe o tipo de instalação:")
+instalacao = (input("Residencial(R), Indrustrial(I) e Comercial(C)"))
 
-print("Qual operação você deseja realizar;")
-print("Informe soma(+), subtração (-), multiplicação (*) e divisão(/)")
-operacao = input()
-resultado = 0
+if instalacao == "R":
+    if consumo <= 500:
+        valor = consumo * 0.40
+    elif consumo > 500:
+        valor = consumo * 0.65
 
-if operacao == "+":
-    resultado = n1 + n2
+elif instalacao == "I":
+    if consumo <= 1000:
+        valor = consumo * 0.55
+    elif consumo > 1000:
+        valor = consumo * 0.60
 
-elif operacao == "-":
-    resultado = n1 - n2
-
-elif operacao == "*":
-    resultado = n1 * n2
-
-elif operacao == "/":
-    resultado = n1 / n2
+elif instalacao == "C":
+    if consumo <= 5000:
+        valor = consumo * 0.55
+    elif consumo > 5000:
+        valor = consumo * 0.60
 
 else:
     print("Valor invalido!")
 
-print(f"O valor da operação é: {resultado}")
+print(f"O valor a pagar R$ {valor:6.2f}")
