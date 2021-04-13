@@ -4,7 +4,7 @@ instalacao = (input("Residencial(R), Indrustrial(I) e Comercial(C)"))
 
 if instalacao == "R":
     if consumo <= 500:
-        valor = consumo * 0.40
+        valor = consumo * 0.756221
     elif consumo > 500:
         valor = consumo * 0.65
 
@@ -16,7 +16,7 @@ elif instalacao == "I":
 
 elif instalacao == "C":
     if consumo <= 5000:
-        valor = consumo * 0.55
+        valor = consumo * 0.756221
     elif consumo > 5000:
         valor = consumo * 0.60
 
