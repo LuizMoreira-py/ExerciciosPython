@@ -1,6 +1,6 @@
-x = 10
-while x >= 0:
-    print(x)
-    x = x - 1
-    if x == -1:
-        print("Fogo!")
+fim = int(input("Digite o último número a imprimir: "))
+x = 1
+while x <= fim:
+    if x % 2 == 3:
+        print(x)
+    x = x + 1
