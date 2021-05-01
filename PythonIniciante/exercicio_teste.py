@@ -1,5 +1,5 @@
-deposito = float(input("Digito o valor do depósito: "))
-taxa = float(input("Digite o valor da taxa: "))
+deposito = float(input("Digito o valor do depósito: R$ "))
+taxa = float(input("Digite o valor da taxa: R$ "))
 
 
 
