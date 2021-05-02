@@ -1,12 +1,14 @@
-deposito = float(input("Digito o valor do depósito: R$ "))
-taxa = float(input("Digite o valor da taxa: R$ "))
-
-
-
 mes = 0
 
-while mes <= 24:
-    total = deposito * taxa
-    juros = total * mes
+deposito = float(input())
+taxa = float(input())
+
+rendimento = deposito * taxa
+
+while mes <= 23:
+    rendimentoPeriodo = (deposito * taxa) * mes
     mes += 1
-    print(f"Mês {mes} Deposito {total} Rendimento {juros}")
+    print(f"Mês {mes} Depósito: R$ {deposito} Rendimento: R$ {rendimento} Rendimento periodo: R$ {rendimentoPeriodo}")
+
+total = deposito + rendimentoPeriodo
+print(f"Total: R$ {total}")
