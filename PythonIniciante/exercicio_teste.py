@@ -20,5 +20,6 @@ else:
         juros_total = juros_total + juros
         mes += 1
 
+print(f"Mês {mes}")
 print(f"Total: R$ {total:6.2f}")
-
+print(f"Total juros: R$ {juros_total:6.2f}")
