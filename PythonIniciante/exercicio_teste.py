@@ -19,3 +19,6 @@ else:
         total = total + juros - parcelas
         juros_total = juros_total + juros
         mes += 1
+
+print(f"Total: R$ {total:6.2f}")
+
