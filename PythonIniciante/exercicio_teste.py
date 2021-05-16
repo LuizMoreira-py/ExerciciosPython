@@ -1,7 +1,4 @@
-s = 0
-while True:
-    v = int(input("digite um número a somar ou 0 para sair: "))
-    if v == 0:
-        break
-    s += v
-print(s)
+# Escreva um programa que leia números inteiros do teclado. O programa deve
+# ler os números até que o usuário digite 0 (zero). No final da execução,
+# exiba a quantidade de números digitados como a soma e a média aritmética.
+
