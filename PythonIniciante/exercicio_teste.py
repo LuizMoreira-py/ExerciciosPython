@@ -8,7 +8,6 @@ while valor >= 0:
     if valor == 0:
         break
 
-
     while True:
         if atual <= apagar:
             apagar -= atual
