@@ -5,5 +5,6 @@
 # o número não é primo. Observe que 0 e 1 não são primos e que 2 é o único
 # número primo que é par.
 
-fim = int(input())
-resto = fim // 2 % 
+numero = int(input())
+resto = numero % 3
+print(resto)
