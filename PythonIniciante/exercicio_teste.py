@@ -5,20 +5,13 @@
 # o número não é primo. Observe que 0 e 1 não são primos e que 2 é o único
 # número primo que é par.
 
+x = 0
 
 numero = int(input())
-
 resto = numero % 2
-cont = 1
 
-if numero == 0:
-    print("Valor invalido!")
-    numero = int(input())
-while cont <= numero:
-    divisao = resto // cont
-    cont += 1
-
-if divisao == 0:
-    print("Não é primo!")
-else:
-    print("Primo!")
+while x <= numero:
+    if x % 2 == 1:
+        divisao = resto // x
+        print(divisao)
+    x += 1
