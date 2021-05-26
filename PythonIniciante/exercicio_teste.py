@@ -6,12 +6,16 @@
 # número primo que é par.
 
 x = 0
-
 numero = int(input())
 resto = numero % 2
 
-while x <= numero:
+whilnumero:
     if x % 2 == 1:
-        divisao = resto // x
+        divisao = x % numero
         print(divisao)
     x += 1
+
+if divisao == 0:
+    print(f"O número {numero} não é primo")
+else:
+    print(f"O número {numero} é primo")
