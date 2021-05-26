@@ -9,13 +9,17 @@ x = 0
 numero = int(input())
 resto = numero % 2
 
-while numero > x:
-    if x % 2 == 1:
-        divisao = numero % x
-        print(divisao)
-    x += 1
-
-if divisao == 0:
-    print(f"O número {numero} não é primo")
-else:
+if numero == 2:
     print(f"O número {numero} é primo")
+
+else:
+    while x < numero:
+        if x % 2 == 1:
+            divisao = numero % x
+        x += 1
+
+    if divisao % x != 0:
+        print(f"O número {numero} é primo")
+
+    else:
+        print(f"O número {numero} não é primo")
