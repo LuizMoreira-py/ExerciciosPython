@@ -1,16 +1,16 @@
-# Escreva um programa que calcule a raiz quadrada de um número.
-# Utilize o metodo de Newton para obter um resultado aproximado.
-# Sendo n o número a obter a raiz quadrada, considere a base b=2.
-# Calcule p usando a formula p=(b+(n/b))/2. Agora, calcule o quadrado de p.
-# A cada passo, faça b=p e recalcule p usando a fórmula apresentada.
-# Pare quando a diferença absoluta entre n e o
-# quadrado de p for menor que 0,0001.
+# Escreva um programa que calcule o resto da divisão inteira entre dois
+# números.
+# # Utilize apenas as operações de soma e subtração para calcular o resultado.
 
+cont = 1
+dividendo = int(input("Informe um número inteiro para o dividendo: "))
+divisor = int(input("Infome um número inteiro para o divisor: "))
 
-n = float(input("Informe um número para calcular a raiz quadrada: "))
-b = 2
-
-while abs(n - (b * b)) > 0.00001:
-    p = (b + (n / b)) / 2
-    b = p
-print(f"A raiz quadrada de {n} é aproximadamente {p:8.4f}")
+while True:
+    print(f"{cont}° divisão: {dividendo} - {divisor}")
+    dividendo = dividendo - divisor
+    resto = dividendo
+    cont += 1
+    if resto <= divisor:
+        print(f"Resto = {resto}")
+        break
