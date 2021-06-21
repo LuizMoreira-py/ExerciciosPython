@@ -1,5 +1,9 @@
-def soma(nome, idade):
-    return nome, idade
+usuario = input("Digite se usuário: ")
+caracteres = len(usuario)
 
+print(usuario, caracteres, type(caracteres))
 
-print(soma('Luiz', 25))
+if caracteres < 6:
+    print("Você precisa digitar pelo menos 6 caracteres")
+else:
+    print("Você foi cadastrado no sistema")
