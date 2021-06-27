@@ -15,6 +15,6 @@ ano_atual = 2021
 nascimento = ano_atual - idade
 imc = (peso / altura ** 2)
 
-print(f'{nome} tem {idade} anos, {altura} de altura e pesa {peso}kg.')
-print(f'O IMC de Camila é {imc:.2f}.')
-print(f'Camila nasceu em {2021-28}.')
+print(f'{nome} tem {idade} anos e {altura} de altura.')
+print(f'Camila pesa {peso} kg e seu IMC é {imc:.2f}.')
+print(f'Camila nasceu em {nascimento}.')
